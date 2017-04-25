@@ -29,7 +29,7 @@ instruction
 
 
 
-    // run shared js-env code - pre-init
+    // run shared js-env code - init-before
     (function () {
         // init local
         local = {};
@@ -62,8 +62,8 @@ instruction
 
 
 
-    // post-init
-    // run browser js-env code - post-init
+    // init-after
+    // run browser js-env code - init-after
     /* istanbul ignore next */
     case 'browser':
         local.testRunBrowser = function (event) {
@@ -151,7 +151,7 @@ instruction
 
 
 
-    // run node js-env code - post-init
+    // run node js-env code - init-after
     /* istanbul ignore next */
     case 'node':
         // export local
@@ -291,14 +291,15 @@ utility2-comment -->\n\
         local.assetsDict['/assets.example.js'] =
             local.assetsDict['/assets.example.js'] ||
             local.fs.readFileSync(__filename, 'utf8');
+        // bug-workaround - long $npm_package_buildCustomOrg
+        /* jslint-ignore-begin */
         local.assetsDict['/assets.npmdoc_credit_card.rollup.js'] =
             local.assetsDict['/assets.npmdoc_credit_card.rollup.js'] ||
             local.fs.readFileSync(
-                // buildCustomOrg-hack
-                local.npmdoc_credit_card.__dirname +
-                    '/lib.npmdoc_credit_card.js',
+                local.npmdoc_credit_card.__dirname + '/lib.npmdoc_credit_card.js',
                 'utf8'
             ).replace((/^#!/), '//');
+        /* jslint-ignore-end */
         local.assetsDict['/favicon.ico'] = local.assetsDict['/favicon.ico'] || '';
         // if $npm_config_timeout_exit exists,
         // then exit this process after $npm_config_timeout_exit ms
