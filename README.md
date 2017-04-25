@@ -1,4 +1,7 @@
-# api documentation for  [credit-card (v3.0.1)](https://github.com/continuationlabs/credit-card)  [![npm package](https://img.shields.io/npm/v/npmdoc-credit-card.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-credit-card) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-credit-card.svg)](https://travis-ci.org/npmdoc/node-npmdoc-credit-card)
+# npmdoc-credit-card
+
+#### basic api documentation for  [credit-card (v3.0.1)](https://github.com/continuationlabs/credit-card)  [![npm package](https://img.shields.io/npm/v/npmdoc-credit-card.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-credit-card) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-credit-card.svg)](https://travis-ci.org/npmdoc/node-npmdoc-credit-card)
+
 #### credit card validation
 
 [![NPM](https://nodei.co/npm/credit-card.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/credit-card)
@@ -64,7 +67,8 @@
     "scripts": {
         "test": "belly-button -f && lab -v -t 100 -a code"
     },
-    "version": "3.0.1"
+    "version": "3.0.1",
+    "bin": {}
 }
 ```
 

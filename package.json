@@ -1,6 +1,6 @@
 {
     "author": "kai zhu <kaizhu256@gmail.com>",
-    "description": "api documentation for [credit-card (v3.0.1)](https://github.com/continuationlabs/credit-card) [![npm package](https://img.shields.io/npm/v/npmdoc-credit-card.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-credit-card) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-credit-card.svg)](https://travis-ci.org/npmdoc/node-npmdoc-credit-card)",
+    "description": "#### basic api documentation for  [credit-card (v3.0.1)](https://github.com/continuationlabs/credit-card)  [![npm package](https://img.shields.io/npm/v/npmdoc-credit-card.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-credit-card) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-credit-card.svg)](https://travis-ci.org/npmdoc/node-npmdoc-credit-card)",
     "devDependencies": {
         "credit-card": "*",
         "electron-lite": "kaizhu256/node-electron-lite#alpha",
@@ -35,5 +35,5 @@
         "start": "PORT=${PORT:-8080} utility2 start test.js",
         "test": "(set -e; export PORT=$(utility2 shServerPortRandom); utility2 test test.js)"
     },
-    "version": "0.0.1"
+    "version": "2017.4.25"
 }
